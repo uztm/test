@@ -133,14 +133,9 @@ async def leng_u(message: Message):
 # 
 @dp.callback_query_handler(text="Hokim")
 async def leng_uz(call: CallbackQuery):
-    # dir2 = 'images\Sihatgoh.png'
-    # with open(dir2, 'rb') as pic2:
-    #     await bot.send_photo(call.message.chat.id, pic2, caption='XXXXXX', reply_markup=mp.hokimiyat)
-    await bot.send_photo(call.message.chat.id, photo='https://cdn3.vectorstock.com/i/1000x1000/96/47/error-pixel-glitch-vector-20409647.jpg',caption='HOKIMIYAT 🏛 \n\n ☎️: +998-74-734-44-41 \n\n 📍Ushbu manzilga borish uchun \n                              👇👇👇', reply_markup=mp.hokimiyat)
-    # test = 'ссылка'
-    #     await bot.send_photo(message.chat.id, test)
-    # await bot.send_photo(call.message.chat.id, photo=photo, caption='HOKIMIYAT 🏛 \n\n ☎️: +998-74-734-44-41 \n\n 📍Ushbu manzilga borish uchun \n                              👇👇👇', reply_markup=mp.hokimiyat)
-    # await message.answer_photo('https://github.com/uztm/new1/blob/main/images/Hokim.jpg')
+    hokim='https://pin.it/5Ku7kYK'
+    await bot.send_photo(call.message.chat.id, photo=hokim,caption='HOKIMIYAT 🏛 \n\n ☎️: +998-74-734-44-41 \n\n 📍Ushbu manzilga borish uchun \n                              👇👇👇', reply_markup=mp.hokimiyat)
+    
 
 @dp.callback_query_handler(text="Markaz")
 async def leng_uz(call: CallbackQuery):
